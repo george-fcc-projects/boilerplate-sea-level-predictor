@@ -8,6 +8,7 @@ import numpy as np
 class LinePlotTestCase(unittest.TestCase):
     def setUp(self):
         self.ax = sea_level_predictor.draw_plot()
+        self.maxDiff = None
 
     def test_plot_title(self):
         actual = self.ax.get_title()
